@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN PAGE</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+          <img src="logo.jpeg" height="80px" alt="Logo">
+        </div>
+        <h1 class="navname">THE BAT COMPANY</h1>
+        <div class="navbar-links">
+          <a href="logIn.html">Logout</a>
+        </div>
+    </div>
+    <div class="container">
+        <input type="radio" id="radio-1" name="tabs" checked>
+        <label for="radio-1">ADD PRODUCT</label>
+        <input type="radio" id="radio-2" name="tabs">
+        <label for="radio-2">VIEW PRODUCTS</label>
+    </div>
+    <div id="addProduct" class="tab-content">
+        <form class="addItem" action="">
+            <input type="text" name="PRODUCT ID" placeholder="PRODUCT ID" required>
+            <input type="text" name="PRODUCT NAME" placeholder="PRODUCT NAME" required>
+            <input type="number" name="QUANTITY" placeholder="QUANTITY" required>
+            <button>ADD ITEM</button>
+        </form>
+    </div>
+    <div id="viewProducts" class="tab-content" >
+        <h2>View Products Section</h2>
+        <p>This is the content for viewing products.</p>
+    </div>
+</body>
+</html>
